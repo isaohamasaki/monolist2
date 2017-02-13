@@ -2,6 +2,8 @@
   <title><%= @item.title %>-monolist"</title>
   <meta name = "description" content="<%= @item.title %>に関する情報です。この商品を欲しい人、持ってる人を表示しています。">
 <% end %>
+<%= link_to "欲しいものランキング", ranking_want_path %>
+<%= link_to "持っているものランキング", ranking_have_path %>
 <div class="container">
   <div class="container-inner inner-sm clearfix">
     <div class="item-single-main">

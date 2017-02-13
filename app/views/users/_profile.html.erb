@@ -2,6 +2,8 @@
   <title><%= user.name %>-monolist</title>
   <meta name = "description" content = "<%= user.name %>のモノページ。<%= user.name %>の欲しいモノ、持ってるモノを表示しています。">
 <% end %>
+<%= link_to "欲しいものランキング", ranking_want_path %>
+<%= link_to "持っているものランキング", ranking_have_path %>
 <div class="user-profile">
   <div class="icon">
     <%= gravatar_for user, size: 100 %>
